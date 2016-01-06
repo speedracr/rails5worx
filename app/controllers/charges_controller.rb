@@ -69,6 +69,6 @@ class ChargesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def charge_params
-      params.require(:charge).permit(:amount_in_cents)
+      params.require(:charge).permit(:amount_in_cents, :amount)
     end
 end
